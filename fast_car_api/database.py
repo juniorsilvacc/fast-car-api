@@ -14,10 +14,11 @@ SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 # Declara tabelas do meu banco de dados
 Base = declarative_base()
 
+
 # Dependência para obter a sessão e garantir que será fechada no fim
 def get_session():
     session = SessionLocal()
     try:
-        yield session   # fornece a sessão para uso
+        yield session  # fornece a sessão para uso
     finally:
-        session.close() # garante que fecha depois
+        session.close()  # garante que fecha depois

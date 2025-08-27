@@ -5,3 +5,21 @@ description = "API Moderna com FasAPI"
 authors = [
     {name = "JuniiorSilva", email = "juniiorsilvacc1@hotmail.com"}
 ]
+
+[tool.ruff]
+line-length = 79
+extend-exclude = ['migrations']
+
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+lint = 'ruff check'
+lint-fix = 'ruff check --fix'
+format = 'ruff format'
+run = 'fastapi dev fast_car_api/app.py'

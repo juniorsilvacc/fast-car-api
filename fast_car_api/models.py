@@ -1,4 +1,5 @@
 from sqlalchemy import Column, Integer, String, Text
+
 from fast_car_api.database import Base
 
 

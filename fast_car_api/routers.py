@@ -5,6 +5,7 @@ router = APIRouter(
     tags=['cars'],
 )
 
+
 @router.get('/')
 def list_cars():
     return {
