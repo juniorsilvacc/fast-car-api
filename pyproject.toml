@@ -3,7 +3,7 @@ name = "Fast Car API"
 version = "0.1.0"
 description = "API Moderna com FasAPI"
 authors = [
-    {name = "JuniiorSilva", email = "juniiorsilvacc1@hotmail.com"}
+    {name = "JuniiorSilva", email = "juniiorsilvadev@gmail.com"}
 ]
 
 [tool.ruff]
@@ -23,3 +23,4 @@ lint = 'ruff check'
 lint-fix = 'ruff check --fix'
 format = 'ruff format'
 run = 'fastapi dev fast_car_api/app.py'
+docs = 'mkdocs serve -a 127.0.0.1:8001'
